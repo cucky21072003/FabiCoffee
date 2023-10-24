@@ -4,14 +4,18 @@ const styles = StyleSheet.create({
     title:{
         textAlign:'center',
         fontSize: 36,
+        marginTop: 50,
     }, 
    
     usename:{
         marginTop: 50,
         marginBottom: 20,
+        marginLeft: 50,
+        
     },
     pass:{
         marginBottom: 30,
+        marginLeft: 50,
     },
     text:{
         fontSize: 16,
@@ -22,6 +26,7 @@ const styles = StyleSheet.create({
         height: 41,
         backgroundColor:'#D9D9D9',
         paddingHorizontal: 15, // placeholder lùi vào 1 chút
+        borderRadius:10,
     },
 
     clickcomeon:{

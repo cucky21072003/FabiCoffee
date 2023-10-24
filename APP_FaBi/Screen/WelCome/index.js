@@ -1,8 +1,8 @@
-import { View, Text, Image, TouchableOpacity} from 'react-native'
+import { View, Text, Image, TouchableOpacity,Button} from 'react-native'
 import React from 'react'
 
 import styles from './style';
-const WelCome = () => {
+const WelCome = ({navigation}) => {
     const SkiiImage = require('../WelCome/img/6493323_image.webp');
   return (
     <View>
@@ -11,7 +11,9 @@ const WelCome = () => {
         <View style={styles.comeon}>
           <TouchableOpacity>
             <View style={styles.clickcomeon}>
-              <Text style={styles.textComeon}>Come On</Text>
+              <Button 
+                title='Come on' 
+                onPress={()=>navigation.navigate('Login')}/>
             </View>
           </TouchableOpacity>
         </View>

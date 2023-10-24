@@ -9,6 +9,7 @@ import Checkbox from 'expo-checkbox';
 
 
 import styles from './style';
+import { Button } from 'react-native-paper';
 const Login = () => {
   const [isChecked, setChecked] = useState(false)
   return (
@@ -37,7 +38,9 @@ const Login = () => {
       <View style={styles.content}>
         <Text style={styles.contenttext}>Bạn chưa có tài khoản?</Text>
         <TouchableOpacity>
-          <Text style={[styles.contenttext, styles.contenttextcolor]}> Đăng ký</Text>
+          <Button 
+            title='Đăng ký' 
+            onPress={()=>navigation.navigate('Register')}/>
         </TouchableOpacity>
       </View>
       <View style={styles.line}></View>
@@ -50,6 +53,10 @@ const Login = () => {
         />
         <Text> I agree to all requests</Text>
       </View>
+      <Button 
+        title='goback'
+        onPress={()=>navigation.goback()}
+      />
     </View>
   )
 }

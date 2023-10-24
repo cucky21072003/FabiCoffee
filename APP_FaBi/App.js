@@ -1,23 +1,22 @@
-import { StyleSheet, View} from 'react-native';
+import {View} from 'react-native';
 import React from 'react'
-//import WelCome from './Screen/WelCome';
-//import Login from './Screen/Login';
-import Register from './Screen/Register';
+import { NavigationContainer } from '@react-navigation/native';
 
+import WelCome from './Screen/WelCome';
+import Login from './Screen/Login';
+import Register from './Screen/Register';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+const Stack = createNativeStackNavigator();
 export default function App() {
   return (
-    <View style={styles.container}>
-      
-      <Register/>
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name='WelCome' options={{headerShown:false}} component={WelCome} ></Stack.Screen>
+        <Stack.Screen name='Login' options={{headerShown:false}} component={Login} ></Stack.Screen>
+        <Stack.Screen name='Register' options={{headerShown:false}} component={Register} ></Stack.Screen>
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

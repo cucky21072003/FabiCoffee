@@ -7,10 +7,11 @@ import { View,
 } from 'react-native'
 import React, { useState } from 'react'
 import styles from './style';
+import { Button } from 'react-native-paper';
 //import NavigationContainer from '@react-navigation/stack';
 
 
-const Register = ()  => {
+const Register = ({navigation})  => {
   const [usename, setTask1] = useState('');
   const [year, setTask2] = useState('');
   const [address, setTask3] = useState('');
@@ -91,9 +92,12 @@ const Register = ()  => {
             </View>  
           </TouchableOpacity>
         </View> 
+        <Button 
+          title='go back'
+          onPress={()=>navigation.goBack()}
+        />
       </View>
     </KeyboardAvoidingView>
-    
   )
 }
 
