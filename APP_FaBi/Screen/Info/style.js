@@ -4,10 +4,10 @@ const styles = StyleSheet.create({
     container:{
         flex:1,
         color:'#000',
-        marginTop:30,
+        marginTop:40,
     },
     touchback:{
-        paddingHorizontal:10
+        paddingHorizontal:10,
     },
     Info:{
         alignItems:'center',

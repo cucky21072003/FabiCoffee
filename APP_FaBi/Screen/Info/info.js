@@ -5,11 +5,11 @@ import { Ionicons } from '@expo/vector-icons';
 
 const avatar = require('../../assets/avatar.jpg');
 
-const Info = () => {
+const Info = ({navigation}) => {
   return (
     <View style = {styles.container}>
       <TouchableOpacity style={styles.touchback}> 
-        <Ionicons name="arrow-back-sharp" size={30} color="black" />
+        <Ionicons name="arrow-back-sharp" size={30} color="black" onPress={()=>navigation.navigate('Notice')} />
       </TouchableOpacity>
       <View style = {styles.Info}>
         <Image source={avatar} style = {styles.avatar}/>
