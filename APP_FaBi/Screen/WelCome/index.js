@@ -6,7 +6,7 @@ const WelCome = ({navigation}) => {
     const SkiiImage = require('../WelCome/img/6493323_image.webp');
   return (
     <View>
-        <Text style={styles.title}>Welcomen</Text>
+        <Text style={styles.title}>Welcome</Text>
         <Text style={styles.text}>App FaBi</Text>
         <View style={styles.comeon}>
           <TouchableOpacity>

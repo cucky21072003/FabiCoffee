@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { Colors } from "react-native/Libraries/NewAppScreen";
 
 const styles = StyleSheet.create({
     container:{
@@ -9,18 +10,22 @@ const styles = StyleSheet.create({
         height:210,
         top:40,
         marginLeft:20,
-    },
+    }, 
     body:{
         width: 500, 
         height: 500, 
         marginTop:55,
         backgroundColor:'#C6FAF3',
+        flexDirection: 'column',
+        alignItems: 'center',
     },
     btn:{
-        width:310,
+         width:250,
         height:90,
         backgroundColor:'#2DE840',
-        marginLeft:40,
+        Color:'#FFFFFF',
+        marginRight:90,
+        marginVertical: 10,
     },
 })
 

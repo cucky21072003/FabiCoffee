@@ -16,7 +16,7 @@ const Home = ({navigation}) => {
                     title='Coffee' 
                     onPress={()=>navigation.navigate('')}
                 />
-                <Button
+                {/* <Button
                     title='Milk shake' 
                     onPress={()=>navigation.navigate('')}
                 />
@@ -31,7 +31,7 @@ const Home = ({navigation}) => {
                 <Button
                     title='Other' 
                     onPress={()=>navigation.navigate('')}
-                />
+                /> */}
               </View>
             </TouchableOpacity>
         </View>
